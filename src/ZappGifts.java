@@ -13,10 +13,12 @@ public class ZappGifts {
 	private static final String API_SEARCH = "http://api.zappos.com/Search";
 	private static final String TERM = "?term=\"gift\"";
 	private static final String LIMIT = "&limit=100";
-    private static final String INCLUDES = "&includes=[\"onSale\"]";
-    private static final String FILTERS = "&filters={\"onSale\":[\"true\"]}";
-    private static final String SORT = "&sort={\"goLiveDate\":\"desc\"}";
-	private static final String API_KEY = "&key=52ddafbe3ee659bad97fcce7c53592916a6bfd73";
+	private static final String INCLUDES = "&includes=[\"onSale\"]";
+	private static final String FILTERS = "&filters={\"onSale\":[\"true\"]}";
+	private static final String SORT = "&sort={\"goLiveDate\":\"desc\"}";
+	// API_KEY is the API key
+	// it is omitted here for security reasons
+	private static final String API_KEY = "&key=<YOUR_API_KEY_GOES_HERE>";
 
 	private static int numTotalProducts = 100;
 	private static ZappProduct[] productList = new ZappProduct[numTotalProducts];
